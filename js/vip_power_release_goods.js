@@ -7,8 +7,8 @@ $(function() {
     // buildImg
     buildImg("show",6);
     buildImg("detial",10);
-    // 发表按钮
-    buildSend();
+    //根据hash值判断用户选择的是付费上传还是普通上传
+    buildPayOrNotPay();
 });
 
 // 图片上传逻辑
@@ -88,9 +88,35 @@ function showWait() {
 function hideWait() {
     $(".waiting").hide();
 }
-// 发表按钮
-function buildSend() {
-    $(".send-btn").on("click", function() {
 
-    });
+function buildPayOrNotPay() {
+    // 获取的hash值
+    var pay_word = getUrlHashValue("pay");
+    if(pay_word == "need"){
+        needPay();
+    }else{
+        notNeedPay();
+    }
 }
+function needPay() {
+    $(".pay-send-block").show();
+    $(".no-need-pay-send-btn").hide();
+
+}
+function notNeedPay() {
+    $(".no-need-pay-send-btn").show();
+    $(".pay-send-block").hide();
+}
+
+// 输入验证
+function checkIpt() {
+    var r = true;
+    var $btns = $(".no-need-pay-send-btn ,need-pay-send-btn");
+    if(r) {
+        $btns.removeClass("gray");
+    }else{
+        $btns.addClass("gray");
+    }
+}
+
+function check

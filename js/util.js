@@ -457,3 +457,18 @@ function commonEmailCheck(s) {
     }
     return false;
 }
+
+
+
+
+
+//HASH #pay=need&pay2=need
+function getUrlHashValue(para) {
+    var hash = window.location.hash ? window.location.hash.replace(/^#/,"") : "";
+    var r = new RegExp("(^|&)"+ para + "=([^&]*)(?=&|$)","i");
+    var re = hash.match(r);
+    if(re)
+    return re[2];
+    else return null;
+    // return hash.match(r).split("=")[2];
+}

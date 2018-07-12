@@ -1,4 +1,9 @@
-
+#__bs_notify__{
+    background: none!important;
+    background-color: none!important;
+    color: red!important;
+    font-size: calc(40rem / 75)!important;
+}
 
 html {
     font-family: PingFang-Medium,Arial,"Helvetica Neue", Helvetica, STHeiTi, sans-serif;
