@@ -57,7 +57,7 @@ function changeListen() {
         $(".sec-go-next a").attr("disabled", true);
     }
 
-    $_a_go_next.on("click.stop", function(){
+    $_a_go_next.off("click.stop").on("click.stop", function(){
         showPrompt();
         return false;
     });

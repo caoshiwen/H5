@@ -42,7 +42,8 @@
       */
       sliderHeight: '60%',
 
-      afterSlideFn: function(){}
+      afterSlideFn: function(){},
+      slideCurrent: 1
     };
 
     var settings = $.extend(defaultSettings, options);
@@ -71,6 +72,7 @@
     var allowSlideSwitch = true;
     var autoPlay = settings.autoPlay;
     var afterSlideFn = settings.afterSlideFn;
+    var slideCurrent = settings.slideCurrent;
     /** 
     * Set initial values.
     */
@@ -108,7 +110,10 @@
       }
 
       // Jump to slide 1 (since another slide was added to the beginning of row);
-      jumpToSlide(1);
+      jumpToSlide(slideCurrent);
+      if(slideCurrent != 1) {
+        switchSlide();
+      }
 
       enableAutoPlay();
     })();

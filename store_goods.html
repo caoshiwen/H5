@@ -61,6 +61,36 @@
             color:#c3c3c3 !important;
             pointer-events: none;
          }
+         
+        .stars-block .star-active{
+            float: left;
+        }
+        .stars-block .star{
+            float: left;
+        }
+        .stars-block.light-5 .star-active,
+        .stars-block.light-1 .star-active:nth-of-type(1),
+        .stars-block.light-1 .star,
+        .stars-block.light-2 .star-active:nth-of-type(-n + 2),
+        .stars-block.light-2 .star:nth-of-type(-n + 3),
+        .stars-block.light-3 .star-active:nth-of-type(-n + 3),
+        .stars-block.light-3 .star:nth-of-type(-n + 7),
+        .stars-block.light-4 .star-active:nth-of-type(-n + 4),
+        .stars-block.light-4 .star:nth-of-type(-n + 6)
+        {
+            display: block;
+        }
+        .stars-block.light-5 .good-spn,
+        .stars-block.light-4 .good-spn {
+            display: block;
+        }
+        .stars-block.light-3 .not-bad-spn {
+            display: block;
+        }
+        .stars-block.light-2 .bad-spn,
+        .stars-block.light-1 .bad-spn {
+            display: block;
+        }
     </style>
 </head>
 <body class="fl">
@@ -121,44 +151,116 @@
         <article class="h80 lh80 fz24 pl30 pr30">
             <span class="w6 h24 br3 bgc0a9ffd fl mt28"></span>
             <span class="ml16">商品评论(<span>238</span>)</span>
-            <a class="ac0a9ffd fr" href="#">全部评论</a>
+            <a class="ac0a9ffd fr" href="store_goods_all_evaluation.html">全部评论</a>
         </article>
         <article class="h1px bgce5e5e5"></article>
     </section>
-    <section>
-        <article class="pl30 pt32 pb28">
-            <div class="h74 lh74 w690 fz28 c666666">
-                <div class="w74 h74 ofh br50p pr fl">
-                    <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+        <div class="pl30 pr30">
+            <!-- demo1 -->
+            <article class=" pt46 pb28">
+                <div class="h70 lh70 fz28 c666666">
+                    <div class="w70 h70 ofh br50p pr fl">
+                        <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                    </div>
+                    <div class="h74 fl w606 ml14">
+                        <p class="fz28 lh28 mt6">习作德国酿<span class="fr c888888">2018-04-30</span></p>
+                        <div class="stars-block light-5 clearfix lh16 mt18">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <span class="good-spn ml16 cfa491d dn fl">好评</span>
+                            <span class="not-bad-spn ml16 ccccccc dn fl">中评</span>
+                            <span class="bad-spn ml16 ccccccc dn fl">差评</span>
+                        </div>
+                    </div>
+                    
                 </div>
-                <span class="ml18">习作德国酿</span>
-            </div>
-            <div class="fz28 lh32 mult-line-ellipsis-3 mt22 pr30" style="max-height:calc(96rem / 75);">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较</div>
-            <div class="fz22 c888888 mt30 lh22">2018-04-30 颜色分类：灰色;尺码M</div>
-        </article>
-        <article class="h1px bgce5e5e5"></article>
-        <article class="pl30 pt32 pb28">
-            <div class="h74 lh74 w690 fz28 c666666">
-                <div class="w74 h74 ofh br50p pr fl">
-                    <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                <div class="fz28 lh32 mt22 pl84">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较</div>
+                <div class="pl84 clearfix w544 pt28">
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
                 </div>
-                <span class="ml18">习作德国酿</span>
-            </div>
-            <div class="fz28 lh32 mult-line-ellipsis-3 mt22 pr30" style="max-height:calc(96rem / 75);">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。</div>
-            <div class="fz22 c888888 mt30 lh22">2018-04-30 颜色分类：灰色;尺码M</div>
-        </article>
-        <article class="h1px bgce5e5e5"></article>
-        <article class="pl30 pt32 pb28">
-            <div class="h74 lh74 w690 fz28 c666666">
-                <div class="w74 h74 ofh br50p pr fl">
-                    <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                <div class="fz22 c888888 mt18 lh22 pl84"> 颜色分类：灰色;尺码M</div>
+            </article>
+            <article class="h1px bgce5e5e5"></article>
+            <!-- demo2 -->
+            <article class=" pt46 pb28">
+                <div class="h70 lh70 fz28 c666666">
+                    <div class="w70 h70 ofh br50p pr fl">
+                        <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                    </div>
+                    <div class="h74 fl w606 ml14">
+                        <p class="fz28 lh28 mt6">习作德国酿<span class="fr c888888">2018-04-30</span></p>
+                        <div class="stars-block light-1 clearfix lh16 mt18">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <span class="good-spn ml16 cfa491d dn fl">好评</span>
+                            <span class="not-bad-spn ml16 ccccccc dn fl">中评</span>
+                            <span class="bad-spn ml16 ccccccc dn fl">差评</span>
+                        </div>
+                    </div>
+                    
                 </div>
-                <span class="ml18">习作德国酿</span>
-            </div>
-            <div class="fz28 lh32 mult-line-ellipsis-3 mt22 pr30" style="max-height:calc(96rem / 75);">东西蛮好的，基本没有评论里面那些毛病。</div>
-            <div class="fz22 c888888 mt30 lh22">2018-04-30 颜色分类：灰色;尺码M</div>
-        </article>
-    </section>
+                <div class="fz28 lh32 mt22 pl84">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较</div>
+                <div class="pl84 clearfix w544 pt28">
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                </div>
+                <div class="fz22 c888888 mt18 lh22 pl84"> 颜色分类：灰色;尺码M</div>
+            </article>
+            <article class="h1px bgce5e5e5"></article>
+            <!-- demo3 -->
+            <article class=" pt46 pb28">
+                <div class="h70 lh70 fz28 c666666">
+                    <div class="w70 h70 ofh br50p pr fl">
+                        <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                    </div>
+                    <div class="h74 fl w606 ml14">
+                        <p class="fz28 lh28 mt6">习作德国酿<span class="fr c888888">2018-04-30</span></p>
+                        <div class="stars-block light-3 clearfix lh16 mt18">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <span class="good-spn ml16 cfa491d dn fl">好评</span>
+                            <span class="not-bad-spn ml16 ccccccc dn fl">中评</span>
+                            <span class="bad-spn ml16 ccccccc dn fl">差评</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="fz28 lh32 mt22 pl84">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较</div>
+                <div class="pl84 clearfix w544 pt28">
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                </div>
+                <div class="fz22 c888888 mt18 lh22 pl84"> 颜色分类：灰色;尺码M</div>
+            </article>
+        </div>
     <section class="h20 bgcf5f5f5 w750"></section>
 
 

@@ -462,11 +462,12 @@ function commonEmailCheck(s) {
 
 
 
-//HASH #pay=need&pay2=need
-function getUrlHashValue(para) {
-    var hash = window.location.hash ? window.location.hash.replace(/^#/,"") : "";
+//Search 键值对获取
+function getUrlSearchValue(para) {
+    console.log(window.location.search)
+    var search = window.location.search ? window.location.search.replace(/^\?/,"") : "";
     var r = new RegExp("(^|&)"+ para + "=([^&]*)(?=&|$)","i");
-    var re = hash.match(r);
+    var re = search.match(r);
     if(re)
     return re[2];
     else return null;

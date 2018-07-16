@@ -91,7 +91,7 @@ function hideWait() {
 
 function buildPayOrNotPay() {
     // 获取的hash值
-    var pay_word = getUrlHashValue("pay");
+    var pay_word = getUrlSearchValue("pay");
     if(pay_word == "need"){
         needPay();
     }else{
@@ -119,4 +119,6 @@ function checkIpt() {
     }
 }
 
-function check
+function check() {
+    
+}

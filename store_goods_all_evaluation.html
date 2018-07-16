@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px;">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+    <style>
+        .gray{
+            background-color: #888;
+            background-image: none!important;
+            pointer-events: none;
+        }
+        .order-type-wrap {
+            -webkit-transition-duration: 300ms;
+            -o-transition-duration: 300ms;
+            transition-duration: 300ms;
+            -webkit-transition-property: margin-left;
+            -o-transition-property: margin-left;
+            transition-property: margin-left;
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+
+        .eva-type-btn {
+            color: #666;
+            background-color: rgba(0,134,255,.2);
+            border-radius: 500px;
+        }
+        .eva-type-btn.active {
+            color: #fff;
+            background-color: none;
+            background-image: url('img/blue_for_button_bg_no_radius.png');
+            background-repeat: no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+            background-position: top left;
+        }
+        .stars-block .star-active{
+            float: left;
+        }
+        .stars-block .star{
+            float: left;
+        }
+        .stars-block.light-5 .star-active,
+        .stars-block.light-1 .star-active:nth-of-type(1),
+        .stars-block.light-1 .star,
+        .stars-block.light-2 .star-active:nth-of-type(-n + 2),
+        .stars-block.light-2 .star:nth-of-type(-n + 3),
+        .stars-block.light-3 .star-active:nth-of-type(-n + 3),
+        .stars-block.light-3 .star:nth-of-type(-n + 7),
+        .stars-block.light-4 .star-active:nth-of-type(-n + 4),
+        .stars-block.light-4 .star:nth-of-type(-n + 6)
+        {
+            display: block;
+        }
+        .stars-block.light-5 .good-spn,
+        .stars-block.light-4 .good-spn {
+            display: block;
+        }
+        .stars-block.light-3 .not-bad-spn {
+            display: block;
+        }
+        .stars-block.light-2 .bad-spn,
+        .stars-block.light-1 .bad-spn {
+            display: block;
+        }
+    </style>
+</head>
+<body class="fl pt140">
+    <header class="pf zi10 t-40 common-header bb1scccccc bgcffffff" style="background: none; background-color: #ffffff;">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller000000.png"></a>
+        <h2 class="title" style="color: #333333;">全部评价</h2>
+    </header>
+    <section class="pl30 pr30">
+        <div class="clearfix">
+            <div class="eva-type-btn active pt20 pb20 pl26 pr26 fz24 cffffff lh24 fl mr20 mt30">
+                全部 55
+            </div>
+            <div class="eva-type-btn pt20 pb20 pl26 pr26 fz24 cffffff lh24 fl mr20 mt30">
+                最新
+            </div>
+            <div class="eva-type-btn pt20 pb20 pl26 pr26 fz24 cffffff lh24 fl mr20 mt30">
+                好评 12
+            </div>
+            <div class="eva-type-btn pt20 pb20 pl26 pr26 fz24 cffffff lh24 fl mr20 mt30">
+                中评 23
+            </div>
+            <div class="eva-type-btn pt20 pb20 pl26 pr26 fz24 cffffff lh24 fl mr20 mt30">
+                差评 34
+            </div>
+            <div class="eva-type-btn pt20 pb20 pl26 pr26 fz24 cffffff lh24 fl mr20 mt30">
+                有图 34
+            </div>
+
+        </div>
+        <div class="h1px bgce5e5e5 mt30"></div>
+        <div class="pb80">
+            <!-- demo1 -->
+            <article class=" pt46 pb28">
+                <div class="h70 lh70 fz28 c666666">
+                    <div class="w70 h70 ofh br50p pr fl">
+                        <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                    </div>
+                    <div class="h74 fl w606 ml14">
+                        <p class="fz28 lh28 mt6">习作德国酿<span class="fr c888888">2018-04-30</span></p>
+                        <div class="stars-block light-5 clearfix lh16 mt18">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <span class="good-spn ml16 cfa491d dn fl">好评</span>
+                            <span class="not-bad-spn ml16 ccccccc dn fl">中评</span>
+                            <span class="bad-spn ml16 ccccccc dn fl">差评</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="fz28 lh32 mt22 pl84">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较</div>
+                <div class="pl84 clearfix w544 pt28">
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                </div>
+                <div class="fz22 c888888 mt18 lh22 pl84"> 颜色分类：灰色;尺码M</div>
+            </article>
+            <article class="h1px bgce5e5e5"></article>
+            <!-- demo2 -->
+            <article class=" pt46 pb28">
+                <div class="h70 lh70 fz28 c666666">
+                    <div class="w70 h70 ofh br50p pr fl">
+                        <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                    </div>
+                    <div class="h74 fl w606 ml14">
+                        <p class="fz28 lh28 mt6">习作德国酿<span class="fr c888888">2018-04-30</span></p>
+                        <div class="stars-block light-1 clearfix lh16 mt18">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <span class="good-spn ml16 cfa491d dn fl">好评</span>
+                            <span class="not-bad-spn ml16 ccccccc dn fl">中评</span>
+                            <span class="bad-spn ml16 ccccccc dn fl">差评</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="fz28 lh32 mt22 pl84">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较</div>
+                <div class="pl84 clearfix w544 pt28">
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                </div>
+                <div class="fz22 c888888 mt18 lh22 pl84"> 颜色分类：灰色;尺码M</div>
+            </article>
+            <article class="h1px bgce5e5e5"></article>
+            <!-- demo3 -->
+            <article class=" pt46 pb28">
+                <div class="h70 lh70 fz28 c666666">
+                    <div class="w70 h70 ofh br50p pr fl">
+                        <img class="center-by-absolute w74 h74" src="img/header_forexample.png">
+                    </div>
+                    <div class="h74 fl w606 ml14">
+                        <p class="fz28 lh28 mt6">习作德国酿<span class="fr c888888">2018-04-30</span></p>
+                        <div class="stars-block light-3 clearfix lh16 mt18">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star-active w16 ml6 dn" src="img/store_goods_all_eva_star_active.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <img class="star w16 ml6 dn" src="img/store_goods_all_eva_star.png">
+                            <span class="good-spn ml16 cfa491d dn fl">好评</span>
+                            <span class="not-bad-spn ml16 ccccccc dn fl">中评</span>
+                            <span class="bad-spn ml16 ccccccc dn fl">差评</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="fz28 lh32 mt22 pl84">东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较东西蛮好的，基本没有评论里面那些毛病，抽屉确实有点紧。不过装的时候跟后面的出水口冲突了，师傅锯掉了一些，收费50，可以物流比较</div>
+                <div class="pl84 clearfix w544 pt28">
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                    <div class="w220 h220 mr10 fl"><img class="object-fit-cover" src="img/goods_1.png"></div>
+                </div>
+                <div class="fz22 c888888 mt18 lh22 pl84"> 颜色分类：灰色;尺码M</div>
+            </article>
+        </div>
+    </section>
+
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="js/util.js"></script>
+<script src="js/store_goods_evaluation.js"></script>
+</html>

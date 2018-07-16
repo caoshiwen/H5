@@ -12,6 +12,7 @@ $(function() {
                 re = a;
             }
             $("#detials").removeClass().addClass("slide-index-"+re);
-        }
+        },
+        slideCurrent: 3
     });
 });
